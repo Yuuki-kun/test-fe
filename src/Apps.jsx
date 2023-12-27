@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import { Link } from "react-router-dom";
 
 const Apps = () => {
   return (
@@ -7,7 +8,7 @@ const Apps = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reloadddddddd.
+          Edit <code>src/App.js</code> and save to.
         </p>
         <a
           className="App-link"
@@ -17,6 +18,7 @@ const Apps = () => {
         >
           Learn React
         </a>
+        <Link to={"/login"}>goto login</Link>
       </header>
     </div>
   );
